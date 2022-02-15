@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1.5;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*-------  
+general stylings 
+------- */
+
+body * {
+  text-transform: uppercase;
+}
+
+p {
+  text-transform: none;
+}
+
+.box-link-dark,
+.box-link-light {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.box-link-dark {
+  background-color: black;
+  color: white;
+}
+
+.stack * + * {
+  margin-top: 2rem;
+}
+
+.small-stack * + * {
+  margin-top: 1.5rem;
+}
+
+
+/*-------  
+general layout
+------- */
+
+.overview,
+.momentum,
+.stylists,
+.offer {
+  height: 300px;
+}
+
+.stylists, 
+.offer,
+.lookbook {
+  position: relative;
+  margin-left: 5%;
+}
+
+/*-------  
+header > nav 
+------- */
+
+header {
+  width: 90%;
+  margin-inline: auto;
+}
+
+header > a:first-child {
+  float: left;
+}
+
+header > nav {
+  width: 50%;
+  margin-inline: auto;
+}
+
+header > nav li {
+  display: inline-block;
+}
+
+header > a:last-child {
+  float: right;
+}
+
+/*-------  
+main > .hero
+aside text in a different writing mode
+------- */
+
+.hero {
+  position: relative;
+  margin-left: 10%;
+}
+
+.hero * {
+  color: white;
+}
+
+.box {
+  background-color: black;
+}
+
+.box * {
+  padding-left: 5%;
+}
+
+.box h6 {
+  border-left: 2px solid white;
+}
+
+.arrow-buttons span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/*-------  
+main > .overview
+------- */
+
+.overview {
+  width: 70%;
+  margin-inline: auto;
+}
+
+.overview > .small-stack {
+  float: left;
+  width: 25%;
+  margin-inline: 3%;
+}
+
+
+/*-------  
+.momentum > section + section
+------- */
+
+.momentum {
+ padding: 5% 15%;
+ height: 500px;
+}
+
+.momentum > section {
+  display: inline-block;
+  width: 40%;
+}
+
+.momentum > section:last-child > img {
+  width: 100%;
+}
+
+/*-------  
+.stylists > section + section + section
+------- */
+
+.stylists > section {
+  display: inline-block;
+  width: 20%;
+  margin-right: 2%;
+}
+
+.stylists > section > img {
+  width: 100%;
+  height: auto;
+}
+
+.stylists .small-stack {
+  background-color: black;
+  color: white;
+  width: 80%;
+}
