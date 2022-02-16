@@ -81,10 +81,12 @@ general stylings
 
 body * {
   text-transform: uppercase;
+  font-family: "Cinzel", Georgia, Times, serif
 }
 
-p {
+.alt-font {
   text-transform: none;
+  font-family: Georgia, Times, serif
 }
 
 .hero * {
@@ -109,7 +111,7 @@ p {
 }
 
 .small-stack * + * {
-  margin-top: 1.5rem;
+  margin-top: 1.4rem;
 }
 
 
@@ -117,16 +119,23 @@ p {
 general layout
 ------- */
 
+.header {
+  height: 10vw;
+}
+
+.hero {
+  height: 45vw;
+}
+
 .overview,
 .momentum,
 .stylists,
-.offer {
-  height: 300px;
+.offer .stack {
+  height: 30vw;
 }
 
 .stylists, 
-.offer,
-.lookbook {
+.offer {
   position: relative;
   margin-left: 5%;
 }
@@ -209,6 +218,9 @@ main > .overview
   margin-inline: 3%;
 }
 
+.overview img {
+  padding-left: 25%;
+}
 
 /*-------  
 .momentum > section + section
@@ -232,13 +244,14 @@ main > .overview
 .stylists > section + section + section
 ------- */
 
-.stylists > section {
+.stylists > figure {
   display: inline-block;
   width: 20%;
   margin-right: 2%;
+  position: relative;
 }
 
-.stylists > section > img {
+.stylists img {
   width: 100%;
   height: auto;
 }
@@ -247,4 +260,48 @@ main > .overview
   background-color: black;
   color: white;
   width: 80%;
+}
+
+/*-------  
+.offer > section
+------- */
+
+.offer > section {
+  background: url("./images/hairwidecropped.png") no-repeat;
+  background-size: 100%;
+  margin-block: 10vw;
+  margin-right: 5%;
+}
+
+/*-------  
+.lookbook
+------- */
+
+.lookbook {
+  padding-inline: 3.5%;
+  margin: auto;
+  text-align: center;
+}
+
+.album > section {
+  display: inline-block;
+  width: 30%;
+  height: 40vw;
+}
+
+
+.album img {
+  width: 100%;
+}
+
+.album img:hover {
+  opacity: 0.3;
+}
+
+.album div:hover {
+  background-color: black;
+}
+
+.album > section:nth-child(2) {
+  margin-inline: 1.4rem;
 }
