@@ -34,7 +34,7 @@ body {
 	line-height: 1.5;
 }
 
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 
@@ -89,8 +89,17 @@ body * {
   font-family: Georgia, Times, serif
 }
 
+b {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .hero * {
   color: white;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 .box-link-dark,
@@ -107,7 +116,7 @@ body * {
 }
 
 .stack * + * {
-  margin-top: 2rem;
+  margin-top: 1.6rem;
 }
 
 .small-stack * + * {
@@ -118,14 +127,6 @@ body * {
 /*-------  
 general layout
 ------- */
-
-.header {
-  height: 10vw;
-}
-
-.hero {
-  height: 45vw;
-}
 
 .overview,
 .momentum,
@@ -145,26 +146,30 @@ header > nav
 ------- */
 
 header {
-  width: 90%;
-  margin-inline: auto;
+  width: 100%;
+  padding-inline: 5%;
+  background-color: white;
 }
 
-header > a:first-child {
-  float: left;
+header > * {
+  display: inline-block;
+  font-size: 0.8rem;
 }
 
 header > nav {
-  width: 50%;
-  margin-inline: auto;
+  margin-inline: 5%;
+  width: 70%;
+  text-align: right;
 }
 
-header > nav li {
+header ul * {
   display: inline-block;
 }
 
-header > a:last-child {
-  float: right;
+header ul * + * {
+  margin-left: 3%;
 }
+
 
 /*-------  
 main > .hero
@@ -173,10 +178,20 @@ aside text in a different writing mode
 
 
 .hero {
+  height: 55vw;
   position: relative;
   background-color: tan;
   background: url("./images/heroimage.jpg") no-repeat;
   background-size: 100%;
+  border-bottom-right-radius: 10%;
+  border-bottom: 5px solid #887777;
+  transform: skewY(5deg);
+  margin-bottom: 15%;
+  z-index: -1;
+}
+
+.hero > * {
+  transform: skewY(-5deg);
 }
 
 .hero > .stack {
@@ -185,14 +200,24 @@ aside text in a different writing mode
 
 .box {
   background-color: black;
+  width: 25ch;
+  position: absolute;
+  bottom: -20%;
+  left: 20%;
+  padding-block: 2%;
 }
 
 .box * {
-  padding-left: 5%;
+  padding: 5%;
+}
+
+.box a {
+  margin-left: 5%
 }
 
 .box h6 {
-  border-left: 2px solid white;
+  padding-block: 4%;
+  border-left: 5px solid white;
 }
 
 .arrow-buttons span {
