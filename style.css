@@ -178,15 +178,16 @@ aside text in a different writing mode
 
 
 .hero {
-  height: 55vw;
+  height: 60vw;
   position: relative;
   background-color: tan;
   background: url("./images/heroimage.jpg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   border-bottom-right-radius: 10%;
   border-bottom: 5px solid #887777;
   transform: skewY(5deg);
-  margin-bottom: 15%;
+  margin-bottom: 20%;
+  margin-top: -4.5%;
   z-index: -1;
 }
 
@@ -196,6 +197,9 @@ aside text in a different writing mode
 
 .hero > .stack {
   margin-left: 10%;
+  padding-top: 12%;
+  width: 50ch;
+  line-height: 1.1;
 }
 
 .box {
@@ -220,10 +224,31 @@ aside text in a different writing mode
   border-left: 5px solid white;
 }
 
+aside {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  top: 30%;
+  right: 5px;
+  letter-spacing: 1.4px;
+}
+
+.arrow-buttons {
+  position: absolute;
+  bottom: 3%;
+  right: 1%;
+  width: 10%;
+}
+
 .arrow-buttons span {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.8vw;
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 2.8vw;
+  height: 2.8vw;
+  margin-left: 3%;
   border-radius: 50%;
   background-color: white;
 }
