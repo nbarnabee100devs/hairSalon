@@ -164,6 +164,7 @@ header > nav {
   margin-inline: 5%;
   width: 70%;
   text-align: right;
+  padding-top: 1.5vw;
 }
 
 header ul * {
@@ -172,6 +173,15 @@ header ul * {
 
 header ul * + * {
   margin-left: 3%;
+}
+
+header > a:first-of-type {
+  padding-top: 1.5vw;
+  float: left;
+}
+
+header > a:last-of-type {
+  float: right;
 }
 
 
