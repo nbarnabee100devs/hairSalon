@@ -306,6 +306,12 @@ main > .overview
   height: auto;
 }
 
+.stylists figcaption {
+  position: absolute;
+  left: 10%;
+  bottom: -3%;
+}
+
 .stylists .small-stack {
   background-color: black;
   color: white;
@@ -321,6 +327,12 @@ main > .overview
   background-size: 100%;
   margin-block: 10vw;
   margin-right: 5%;
+  height: 30vw;
+}
+
+.offer .stack {
+  padding-top: 10%;
+  padding-left: 8%;
 }
 
 /*-------  
