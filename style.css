@@ -102,18 +102,28 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
 .box-link-dark,
 .box-link-light {
   display: inline-block;
   background-color: white;
   color: black;
-  padding: 10px;
+  padding-block: 1.5vw;
+  padding-inline: 2vw;
 }
 
 .box-link-dark {
   background-color: black;
   color: white;
 }
+
 
 .stack * + * {
   margin-top: 1.6rem;
@@ -128,12 +138,6 @@ h1 {
 general layout
 ------- */
 
-.overview,
-.momentum,
-.stylists,
-.offer .stack {
-  height: 30vw;
-}
 
 .stylists, 
 .offer {
@@ -186,8 +190,8 @@ aside text in a different writing mode
   border-bottom-right-radius: 10%;
   border-bottom: 5px solid #887777;
   transform: skewY(5deg);
-  margin-bottom: 20%;
   margin-top: -4.5%;
+  margin-bottom: 18%;
   z-index: -1;
 }
 
@@ -212,7 +216,7 @@ aside text in a different writing mode
 }
 
 .box * {
-  padding: 5%;
+  padding-inline: 5%;
 }
 
 .box a {
@@ -220,8 +224,12 @@ aside text in a different writing mode
 }
 
 .box h6 {
-  padding-block: 4%;
+  padding: 6%;
   border-left: 5px solid white;
+}
+
+.box p {
+  margin-top: 1.2rem;
 }
 
 aside {
@@ -258,18 +266,16 @@ main > .overview
 ------- */
 
 .overview {
-  width: 70%;
+  width: 80%;
   margin-inline: auto;
+  margin-bottom: 10%;
 }
 
 .overview > .small-stack {
   float: left;
-  width: 25%;
-  margin-inline: 3%;
-}
-
-.overview img {
-  padding-left: 25%;
+  width: 29%;
+  margin-inline: 2%;
+  text-align: center;
 }
 
 /*-------  
@@ -277,16 +283,17 @@ main > .overview
 ------- */
 
 .momentum {
- padding: 5% 15%;
- height: 500px;
+ padding: 5% 12%;
+ margin-bottom: 10%;
+ background-color: #e0e8ef;
 }
 
 .momentum > section {
   display: inline-block;
-  width: 40%;
+  width: 45%;
 }
 
-.momentum > section:last-child > img {
+.momentum img {
   width: 100%;
 }
 
@@ -310,6 +317,7 @@ main > .overview
   position: absolute;
   left: 10%;
   bottom: -3%;
+  text-align: center;
 }
 
 .stylists .small-stack {
@@ -331,8 +339,13 @@ main > .overview
 }
 
 .offer .stack {
-  padding-top: 10%;
+  padding-top: 8%;
   padding-left: 8%;
+}
+
+.offer .stack p {
+  font-size: 1.8rem;
+  width: 21ch;
 }
 
 /*-------  
@@ -345,12 +358,16 @@ main > .overview
   text-align: center;
 }
 
+.lookbook span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .album > section {
   display: inline-block;
   width: 30%;
   height: 40vw;
 }
-
 
 .album img {
   width: 100%;
